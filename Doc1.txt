@@ -1,0 +1,36 @@
+Branch create and delete
+$ mkdir bharat
+$ cd bharat
+$ git config --global user.name "Bharat"
+$ git config --global user.email "bharatgangolli97@gmail.com"
+$ git init
+$ touch demo1.txt
+$ git add .
+$ git commit -m "first commited"
+$ git status
+
+
+Bharat@DESKTOP-UOEMU2G MINGW64 /d/bharat (master)
+$ git commit -m "first commited"
+[master (root-commit) 06714b0] first commited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo1.txt
+Bharat@DESKTOP-UOEMU2G MINGW64 /d/bharat (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+Bharat@DESKTOP-UOEMU2G MINGW64 /d/bharat (master)
+$ git checkout -b b1
+Switched to a new branch 'b1'
+Bharat@DESKTOP-UOEMU2G MINGW64 /d/bharat (b1)
+$ touch demo3.txt
+$ git add .
+$ git commit -m "second commited"
+$ git status
+$ git checkout master
+$ git merge b1
+$ git branch -D b1
+Deleted branch b1 (was aedbbc5).
+Bharat@DESKTOP-UOEMU2G MINGW64 /d/bharat (master)
+$ ls
+demo1.txt  demo3.txt

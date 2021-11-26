@@ -1,0 +1,181 @@
+Q1
+{
+cd desktop
+
+mkdir projecct
+
+git config --global user.name nraju316
+
+gitconfig --global user.email nraju316@gmail.com
+
+git config --global -e
+
+git init
+
+git --help
+
+touch demo.txt or cat > demo.txt
+
+git add demo.txt
+
+git status
+
+git commit -m "first commit"
+
+git remote add origin "LINK"
+
+git fetch
+
+git merge origin/main
+{ if fatal :refusing to merge unrelated histories use the following command then use the above command 
+
+git pull origin main --allow-unrelated-histories
+}
+
+git branch
+
+git branch firstbranch
+
+git checkout firstbranch
+
+cat > me
+introduction abut yourself
+
+git add .
+
+git commit -m "first commit"
+
+git checkout master
+
+git merge -firstbranch
+
+git push origin master
+(to push local content to git hub)	
+
+git branch -D first branch
+(to delete branch)
+
+
+
+}
+________________________________________________________________________________________
+Q3
+{
+	
+setting username and email in git bash
+{
+	git config --global user.name nraju316
+	git config --global user.email nraju316@gmail.com
+}
+To check if the user name and email are configured
+{
+	
+	git config --global -e
+}
+
+Create a Remote repository in GitHub with README file. Create a text file which
+contains answers about the following questions.
+
+i. What is Agile Methodology?
+The Agile methodology is a way to manage a project by breaking it up into several phases. It involves constant collaboration with stakeholders and continuous improvement at every stage. Once the work begins, teams cycle through a process of planning, executing, and evaluating. Continuous collaboration is vital, both with team members and project stakeholders
+
+Examples of Agile Methodology. The most popular and common examples are Scrum, eXtreme Programming (XP), Feature Driven Development (FDD), Dynamic Systems Development Method (DSDM),
+
+
+ii. Differences between Git and GitHub.
+Git is a revision control system, a tool to manage your source code history.Git is a command-line tool
+
+GitHub is a hosting service for Git repositories.GitHub is a cloud-based hosting service that lets you manage Git repositories
+1.Git is a software,	GitHub is a service.
+2.Git is a command-line tool,	GitHub is a graphical user interface
+3.Git is installed locally on the system,	GitHub is hosted on the web
+4.Git is a version control system to manage source code history,	GitHub is a hosting service for Git repositories.
+
+****PULL****
+Demonstrate Three ways of importing Remote repository locally using GitBaSH.
+A)
+1.using git clone command
+go to github and create a new repository ,click on the repository name on top left after opening click on code and copy the http link
+2.open git bash login to your account
+type ->cd desktop
+git clone "paste the link here"
+
+B)
+git remote remove origin{to remove the previous }
+1. git remote add origin "paste the link here"
+2. git pull origin main or master
+
+c)
+1. git remote add origin "paste the link here"
+2. git fetch
+	or git fetch origin master then git merge origin master
+3. git merge origin/main
+
+}
+
+________________________________________________________________________________________
+
+Q4
+
+git remote add origin "link"
+git pull origin main
+
+git branch firstbranch
+
+git checkout firstbranch
+
+cat > me.txt
+(short description here)
+
+git add me.txt
+git commit-m "first commit"
+
+git branch secondbranch
+
+git checkout secondbranch
+
+cat > me1.txt
+(short description)
+
+git add me1.txt
+git commit -m "second commit"
+
+git checkout firstbranch
+ls
+git merge secondbranch
+ls
+
+git checkout master
+ls
+git merge firstbranch
+ls
+
+To rollback 
+git checkout <hashcode> file.txt
+
+____________________________________________________________________________
+Git pull
+mkdir git_demo
+cd git_demo
+pwd
+mkdir changes
+cd changes
+pwd
+git init
+
+git pull "link"(already created repository in github add couple files)
+
+c:/windows/notepad alpha (alpha file name in github repo)
+c:/windows/notepad beta
+
+git status
+git add.
+
+git commit -m "changes made"
+git status
+
+git remote add origin "link"
+git remote -v
+
+git push -u origin master
+(contents will be pushed back to git hub)

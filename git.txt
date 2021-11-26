@@ -1,0 +1,49 @@
+				  PUSH 
+1.	git config –global user.name “xyz”
+2.	git config –global user.email  “XYZ@gmail.com”
+3.	pwd  To check the path of the directory
+4.	ls –l  full version of checking the list of files and folders.
+5.	git help, git log
+6.	git init
+7.	ls –a (hidden paths folders are shown)
+8.	touch demo.txt ,  notepad demo.txt
+9.	git add demo.txt or git add .
+10.	 git status
+11.	 Git commit –m “First commit”
+12.	 git status
+13.	git remote set-url origin https:…… or git remote add origin https
+14.	git remote –v(shows remote url and its nick name.)
+15.	git push origin master   or git push –u origin master
+
+
+PULL
+1.	mkdir demo1      cd demo1   mkdir changes     cd changes
+2.	git init
+3.	git pull https:…..
+4.	notepad about.html (Make some changes and save the file back here)
+5.	git status 
+6.	git add .
+7.	git commit -m “changes made”
+8.	git status (working tree clean)
+9.	git remote add origin https:….
+10.	Git remote –v
+11.	Git push –u origin master  or git push origin master
+
+BRANCH
+1.	Git branch (*master)
+2.	Git branch msrit (new branch)
+3.	Git branch –d msrit(deletes the branch)
+4.	Git checkout msrit (now in msrit branch)  or git checkout –b msrit (creates and moves to new branch msrit).
+(Make some some changes in msrit branch and merge with master branch.)
+5.	Be on master branch and then,
+Git merge msrit
+6.	(In order to have 2 branches in github)
+7.	Git checkout msrit
+Git push –set-upstream origin msrit
+(Now 2 branches will be there in github)
+
+					FETCH
+•	Create a new Branch(Contact)
+•	Git fetch origin
+•	Git checkout Contact
+•	Git fetch origin (Branch name)  this gives oly the specific branch files only
